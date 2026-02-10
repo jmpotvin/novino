@@ -5,287 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novino | IT Consulting & Software Solutions</title>
     <meta name="description" content="Novino delivers IT consulting services and builds software products that solve real problems.">
+    <meta name="theme-color" content="#0b1120">
+    <meta property="og:title" content="Novino | IT Consulting & Software Solutions">
+    <meta property="og:description" content="Novino helps organizations plan, build, and manage their technology with confidence.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://novino.ca/">
+    <meta property="og:image" content="https://novino.ca/images/og-image.png">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:locale:alternate" content="fr_CA">
+    <link rel="canonical" href="https://novino.ca/">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="alternate" hreflang="en" href="https://novino.ca/">
+    <link rel="alternate" hreflang="fr" href="https://novino.ca/fr.html">
+    <link rel="alternate" hreflang="x-default" href="https://novino.ca/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --ink: #1a1a1a;
-            --paper: #f8f6f1;
-            --accent: #2d5a3d;
-            --accent-light: #3a7550;
-            --muted: #6b6560;
-            --border: #e0dcd6;
-            --card-bg: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'DM Sans', sans-serif;
-            background-color: var(--paper);
-            color: var(--ink);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* NAV */
-        nav {
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Instrument Serif', serif;
-            font-size: 1.75rem;
-            color: var(--ink);
-            text-decoration: none;
-            letter-spacing: -0.02em;
-        }
-
-        .nav-contact {
-            font-size: 0.875rem;
-            color: var(--muted);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .nav-contact:hover {
-            color: var(--accent);
-        }
-
-        /* HERO */
-        .hero {
-            padding: 6rem 0 5rem;
-        }
-
-        .hero h1 {
-            font-family: 'Instrument Serif', serif;
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            font-weight: 400;
-            line-height: 1.15;
-            letter-spacing: -0.025em;
-            max-width: 700px;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero p {
-            font-size: 1.125rem;
-            color: var(--muted);
-            max-width: 540px;
-            line-height: 1.7;
-        }
-
-        /* SERVICES */
-        .section {
-            padding: 4rem 0;
-            border-top: 1px solid var(--border);
-        }
-
-        .section-label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--accent);
-            margin-bottom: 2.5rem;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .service-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 2rem;
-            transition: border-color 0.2s;
-        }
-
-        .service-card:hover {
-            border-color: var(--accent);
-        }
-
-        .service-card h3 {
-            font-size: 1.05rem;
-            font-weight: 600;
-            margin-bottom: 0.65rem;
-        }
-
-        .service-card p {
-            font-size: 0.9rem;
-            color: var(--muted);
-            line-height: 1.6;
-        }
-
-        /* PRODUCT */
-        .product-block {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 2.5rem;
-            display: flex;
-            gap: 2rem;
-            align-items: flex-start;
-        }
-
-        .product-icon {
-            flex-shrink: 0;
-            width: 48px;
-            height: 48px;
-            background: var(--accent);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .product-icon svg {
-            width: 24px;
-            height: 24px;
-            fill: none;
-            stroke: #fff;
-            stroke-width: 2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        .product-content h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .product-content p {
-            font-size: 0.95rem;
-            color: var(--muted);
-            line-height: 1.65;
-        }
-
-        .product-badge {
-            display: inline-block;
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            background: #eaf0ec;
-            color: var(--accent);
-            padding: 0.25rem 0.6rem;
-            border-radius: 4px;
-            margin-bottom: 0.75rem;
-        }
-
-        /* FOOTER */
-        footer {
-            padding: 3rem 0;
-            border-top: 1px solid var(--border);
-            margin-top: 2rem;
-        }
-
-        footer .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .footer-left {
-            font-size: 0.85rem;
-            color: var(--muted);
-        }
-
-        .footer-contact {
-            font-size: 0.85rem;
-        }
-
-        .footer-contact a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .footer-contact a:hover {
-            text-decoration: underline;
-        }
-
-        /* ANIMATIONS */
-        .fade-up {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeUp 0.6s ease forwards;
-        }
-
-        .fade-up:nth-child(2) { animation-delay: 0.1s; }
-        .fade-up:nth-child(3) { animation-delay: 0.2s; }
-        .fade-up:nth-child(4) { animation-delay: 0.3s; }
-
-        @keyframes fadeUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 600px) {
-            .hero { padding: 4rem 0 3rem; }
-            .section { padding: 3rem 0; }
-            .product-block { flex-direction: column; }
-            .services-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <nav>
         <div class="container">
-            <a href="/" class="logo">Novino</a>
-            <a href="mailto:contact@novino.ca" class="nav-contact">Get in touch</a>
+            <a href="index.html" class="logo"><img src="images/Novino_RGB_web.svg" alt="Novino"></a>
+            <div class="nav-right">
+                <a href="fr.html" class="lang-switch">FR</a>
+                <a href="mailto:contact@novino.ca" class="nav-contact">Get in touch</a>
+            </div>
         </div>
     </nav>
 
+    <main>
     <section class="hero">
         <div class="container">
             <h1 class="fade-up">IT consulting and software that gets the job done.</h1>
-            <p class="fade-up">Novino helps organizations plan, build, and manage their technology. We also build our own products.</p>
+            <p class="fade-up delay-1">Novino helps organizations plan, build, and manage their technology with confidence.</p>
+            <a href="mailto:contact@novino.ca" class="hero-cta fade-up delay-2">Get in touch</a>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="section-label fade-up">Services</div>
+            <h2 class="section-label fade-up">Services</h2>
             <div class="services-grid">
-                <div class="service-card fade-up">
+                <div class="service-card fade-up delay-1">
                     <h3>IT Consulting</h3>
-                    <p>Enterprise architecture, infrastructure planning, and technical strategy for organizations that need results.</p>
+                    <p>Enterprise architecture, infrastructure planning, telemetry, observability, and technical strategy in the .NET ecosystem. We also help teams migrate to Blazor. From system design to monitoring and alerting, we help organizations build and operate reliable technology.</p>
                 </div>
-                <div class="service-card fade-up">
-                    <h3>Database Administration</h3>
-                    <p>Oracle and SQL Server administration, performance tuning, and reliability engineering.</p>
-                </div>
-                <div class="service-card fade-up">
+                <div class="service-card fade-up delay-2">
                     <h3>Application Development</h3>
-                    <p>Custom software built with modern stacks. From internal tools to customer-facing products.</p>
+                    <p>Custom software built with .NET, Blazor, and modern web technologies. From internal tools to customer-facing products, we deliver solutions that scale.</p>
                 </div>
             </div>
         </div>
@@ -293,24 +63,27 @@
 
     <section class="section">
         <div class="container">
-            <div class="section-label fade-up">Products</div>
-            <div class="product-block fade-up">
+            <h2 class="section-label fade-up">Products</h2>
+            <div class="product-block fade-up delay-1">
                 <div class="product-icon">
-                    <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
                 </div>
                 <div class="product-content">
                     <div class="product-badge">Coming Soon</div>
                     <h3>Pheid</h3>
+                    <p class="pronunciation"><em>/feed/</em></p>
                     <p>A smart notification app that helps you stay on top of what matters without the noise. Built for mobile.</p>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <footer>
         <div class="container">
-            <div class="footer-left">&copy; 2026 Novino. All rights reserved.</div>
-            <div class="footer-contact"><a href="mailto:contact@novino.ca">contact@novino.ca</a></div>
+            <div class="footer-lang"><a href="fr.html" class="lang-switch">FR</a></div>
+            <div class="footer-center">&copy; 2026 Novino. All rights reserved.</div>
+            <div class="footer-right"><div class="footer-contact"><a href="mailto:contact@novino.ca">contact@novino.ca</a></div></div>
         </div>
     </footer>
 
