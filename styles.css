@@ -209,6 +209,16 @@ nav .container {
     margin-bottom: 0.5rem;
 }
 
+.product-content h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.product-content h3 a:hover {
+    color: var(--accent);
+}
+
 .product-content p {
     font-size: 0.95rem;
     color: var(--muted);
@@ -285,6 +295,7 @@ footer .container {
 .lang-switch:focus-visible,
 .nav-contact:focus-visible,
 .footer-contact a:focus-visible,
+.product-content h3 a:focus-visible,
 .logo:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
