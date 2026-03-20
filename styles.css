@@ -236,6 +236,27 @@ nav .container {
     margin-bottom: 0.75rem;
 }
 
+.store-badges {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.store-badges a {
+    display: inline-flex;
+    transition: opacity 0.2s;
+}
+
+.store-badges a:hover {
+    opacity: 0.8;
+}
+
+.store-badges img {
+    height: 40px;
+    width: auto;
+}
+
 /* FOOTER */
 footer {
     padding: 3rem 0;
