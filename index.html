@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novino | IT Consulting & Software Solutions</title>
     <meta name="description" content="Novino delivers IT consulting services and builds software products that solve real problems.">
-    <meta name="theme-color" content="#0b1120">
+    <meta name="theme-color" content="#08090a">
     <meta property="og:title" content="Novino | IT Consulting & Software Solutions">
     <meta property="og:description" content="Novino helps organizations plan, build, and manage their technology with confidence.">
     <meta property="og:type" content="website">
@@ -21,7 +21,7 @@
     <link rel="alternate" hreflang="x-default" href="https://novino.ca/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,8 +30,8 @@
         <div class="container">
             <a href="index.html" class="logo"><img src="images/Novino_RGB_web.svg" alt="Novino"></a>
             <div class="nav-right">
-                <a href="fr.html" class="lang-switch">FR</a>
-                <a href="mailto:contact@novino.ca" class="nav-contact">Get in touch</a>
+                <a href="fr.html" lang="fr">FR</a>
+                <a href="mailto:contact@novino.ca" class="nav-cta">Get in touch</a>
             </div>
         </div>
     </nav>
@@ -39,21 +39,20 @@
     <main>
     <section class="hero">
         <div class="container">
-            <h1 class="fade-up">IT consulting and software that gets the job done.</h1>
-            <p class="fade-up delay-1">Novino helps organizations plan, build, and manage their technology with confidence.</p>
-            <a href="mailto:contact@novino.ca" class="hero-cta fade-up delay-2">Get in touch</a>
+            <h1>IT consulting and software that gets the job done.</h1>
+            <p>Novino helps organizations plan, build, and manage their technology with confidence.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-label fade-up">Services</h2>
-            <div class="services-grid">
-                <div class="service-card fade-up delay-1">
+            <h2 class="section-title">Services</h2>
+            <div class="panel panel-2">
+                <div class="cell">
                     <h3>IT Consulting</h3>
                     <p>Enterprise architecture, infrastructure planning, telemetry, observability, and technical strategy in the .NET ecosystem. We also help teams migrate to Blazor. From system design to monitoring and alerting, we help organizations build and operate reliable technology.</p>
                 </div>
-                <div class="service-card fade-up delay-2">
+                <div class="cell">
                     <h3>Application Development</h3>
                     <p>Custom software built with .NET, Blazor, and modern web technologies. From internal tools to customer-facing products, we deliver solutions that scale.</p>
                 </div>
@@ -63,22 +62,21 @@
 
     <section class="section">
         <div class="container">
-            <h2 class="section-label fade-up">Products</h2>
-            <div class="product-block fade-up delay-1">
-                <div class="product-icon">
-                    <img src="images/pheid-icon-512.png" alt="Pheid" width="48" height="48">
-                </div>
-                <div class="product-content">
-                    <h3><a href="https://pheid.app" target="_blank" rel="noopener noreferrer">Pheid</a></h3>
-                    <p class="pronunciation"><em>/feed/</em></p>
-                    <p>Create a channel, share the code, and broadcast to everyone who joins. Built for mobile.</p>
-                    <div class="store-badges">
-                        <a href="https://apps.apple.com/app/pheid/id6758961971" target="_blank" rel="noopener noreferrer">
-                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=app.pheid" target="_blank" rel="noopener noreferrer">
-                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="40">
-                        </a>
+            <h2 class="section-title">Products</h2>
+            <div class="panel">
+                <div class="cell product">
+                    <img src="images/pheid-icon-512.png" alt="" class="product-icon" width="48" height="48">
+                    <div>
+                        <h3><a href="https://pheid.app" target="_blank" rel="noopener noreferrer">Pheid</a> <span class="pronunciation">/feed/</span></h3>
+                        <p>Create a channel, share the code, and broadcast to everyone who joins. Built for mobile.</p>
+                        <div class="store-badges">
+                            <a href="https://apps.apple.com/app/pheid/id6758961971" target="_blank" rel="noopener noreferrer" class="badge-apple">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=app.pheid" target="_blank" rel="noopener noreferrer" class="badge-google">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="60">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,9 +86,8 @@
 
     <footer>
         <div class="container">
-            <div class="footer-lang"><a href="fr.html" class="lang-switch">FR</a></div>
-            <div class="footer-center">&copy; 2026 Novino. All rights reserved.</div>
-            <div class="footer-right"><div class="footer-contact"><a href="mailto:contact@novino.ca">contact@novino.ca</a></div></div>
+            <span>&copy; 2026 Novino. All rights reserved.</span>
+            <a href="mailto:contact@novino.ca">contact@novino.ca</a>
         </div>
     </footer>
 
